@@ -10,7 +10,7 @@ class MockupApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Wireframe to UI',
+      title: 'Wireframe',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: const Color(0xFFF8F9FA),
@@ -24,7 +24,6 @@ class MockupApp extends StatelessWidget {
             fontWeight: FontWeight.w600,
           ),
         ),
-        // Definiendo estilos globales para mantener consistencia
         textTheme: const TextTheme(
           titleLarge: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.black87),
           bodyMedium: TextStyle(fontSize: 16, color: Colors.black54, height: 1.5),
@@ -35,7 +34,6 @@ class MockupApp extends StatelessWidget {
   }
 }
 
-/// Pantalla principal que orquesta todos los componentes.
 class ProductDetailsScreen extends StatelessWidget {
   const ProductDetailsScreen({super.key});
 
@@ -56,7 +54,7 @@ class ProductDetailsScreen extends StatelessWidget {
           ),
         ],
       ),
-      // Uso Column con Expanded para empujar los botones al fondo 
+      // Expanded to push the buttons
       body: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -81,7 +79,6 @@ class ProductDetailsScreen extends StatelessWidget {
   }
 }
 
-/// Componente encargado de mostrar la imagen.
 class _ProductImage extends StatelessWidget {
   const _ProductImage();
 
@@ -112,7 +109,6 @@ class _ProductImage extends StatelessWidget {
   }
 }
 
-/// Componente que maneja los textos de descripción.
 class _DescriptionSection extends StatelessWidget {
   const _DescriptionSection();
 
@@ -138,7 +134,6 @@ class _DescriptionSection extends StatelessWidget {
   }
 }
 
-/// Componente personalizado de los iconos aleatorios.
 class _IconSelector extends StatelessWidget {
   const _IconSelector();
 
@@ -146,10 +141,10 @@ class _IconSelector extends StatelessWidget {
   Widget build(BuildContext context) {
     // Lista de iconos aleatorios
     final List<IconData> displayIcons = [
-      Icons.ac_unit,             // ❄️
-      Icons.local_fire_department, // 🔥
-      Icons.water_drop_outlined,   // 💧
-      Icons.air,                   // 🌪️
+      Icons.ac_unit,             
+      Icons.local_fire_department, 
+      Icons.water_drop_outlined,   
+      Icons.air,                   
     ];
 
     return Row(
@@ -159,7 +154,6 @@ class _IconSelector extends StatelessWidget {
           style: Theme.of(context).textTheme.titleLarge?.copyWith(fontSize: 18),
         ),
         const SizedBox(width: 16),
-        // Generamos dinámicamente los botones basados en la lista
         ...displayIcons.map((icon) => Padding(
               padding: const EdgeInsets.only(right: 12.0),
               child: _IconOption(icon: icon),
@@ -169,7 +163,6 @@ class _IconSelector extends StatelessWidget {
   }
 }
 
-/// Widget helper para mantener la UI de cada opción de icono consistente.
 class _IconOption extends StatelessWidget {
   final IconData icon;
 
@@ -188,7 +181,6 @@ class _IconOption extends StatelessWidget {
   }
 }
 
-/// Componente inferior para las llamadas a la acción (Botones).
 class _BottomActionMenu extends StatelessWidget {
   const _BottomActionMenu();
 
@@ -206,7 +198,7 @@ class _BottomActionMenu extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   side: const BorderSide(color: Colors.black87, width: 1.5),
                   shape: const RoundedRectangleBorder(
-                    borderRadius: BorderRadius.zero, // Bordes cuadrados como en el sketch
+                    borderRadius: BorderRadius.zero, 
                   ),
                 ),
                 child: const Text(
