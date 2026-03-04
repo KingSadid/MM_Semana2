@@ -123,9 +123,9 @@ class _DescriptionSection extends StatelessWidget {
         ),
         const SizedBox(height: 12),
         Text(
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-          'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
-          'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
+          'Manejando texto como ejemplo para mostrar cómo se vería en pantalla. '
+          'Using text as an example to show how it would look on screen. '
+          'Аекран аҿы ишыҟало аарԥшразы атекст ҿырԥштәыс ахархәара.',
           style: Theme.of(context).textTheme.bodyMedium,
           textAlign: TextAlign.justify,
         ),
