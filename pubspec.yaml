@@ -24,8 +24,3 @@ dev_dependencies:
 # --- AQUÍ EMPIEZA LA CONFIGURACIÓN DE LA IMAGEN ---
 flutter:
   uses-material-design: true
-
-  # Para añadir assets (imágenes, fuentes, etc.)
-  # La indentación (espacios) es CRUCIAL aquí.
-  assets:
-    - assets/Suiza-Montañas.jpg
