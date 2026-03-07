@@ -6,10 +6,10 @@ Este proyecto es el resultado de la actividad práctica de desarrollo de interfa
 
 ##  Objetivos Alcanzados
 
-- ✅ **Organización visual:** Construcción de la interfaz utilizando jerarquías de `Row` y `Column`.
-- ✅ **Uso de widgets básicos:** Implementación exclusiva de `Image`, `Text`, `Icon`, `Container` y botones nativos (`OutlinedButton`, `IconButton`).
-- ✅ **Diseño estructurado:** Aplicación de `Padding` y `SizedBox` para un espaciado consistente.
-- ✅ **Buenas prácticas:** Código modularizado separando la interfaz en widgets privados para mejorar la lectura y el mantenimiento.
+- **Organización visual:** Construcción de la interfaz utilizando jerarquías de `Row` y `Column`.
+- **Uso de widgets básicos:** Implementación exclusiva de `Image`, `Text`, `Icon`, `Container` y botones nativos (`OutlinedButton`, `IconButton`).
+- **Diseño estructurado:** Aplicación de `Padding` y `SizedBox` para un espaciado consistente.
+- **Buenas prácticas:** Código modularizado separando la interfaz en widgets privados para mejorar la lectura y el mantenimiento.
 
 ---
 
@@ -51,10 +51,10 @@ A continuación, se detalla cómo se resolvió cada punto de la rúbrica:
 
 ## Restricciones Cumplidas
 
-* ❌ **NO** se utilizaron diseños prediseñados ni plantillas.
-* ❌ **NO** se incluyeron dependencias o paquetes en el `pubspec.yaml` (100% Flutter Core).
-* ✅ **SÍ** se aplicaron exclusivamente widgets básicos.
-* ✅ **SÍ** el esqueleto central se basa en `Row`, `Column`, `Expanded` y `Container`.
+* **NO** se utilizaron diseños prediseñados ni plantillas.
+* **NO** se incluyeron dependencias o paquetes en el `pubspec.yaml` (100% Flutter Core).
+* **SÍ** se aplicaron exclusivamente widgets básicos.
+* **SÍ** el esqueleto central se basa en `Row`, `Column`, `Expanded` y `Container`.
 
 ---
 
